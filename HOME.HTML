@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>RS Cakrawala Baru - Home</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        color: #333;
+    }
+
+    /* ===== HEADER ===== */
+header {
+    width: 100%;
+    background: #008b8b;
+    padding: 16px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+    .nav {
+        position: relative;
+        z-index: 2;
+        padding: 20px 50px;
+        text-align: right;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .nav a:hover,
+    .nav .active {
+        color: #d0ffff;
+        text-decoration: underline;
+    }
+
+    #menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #menu ul li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    #menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    #menu ul li a:hover,
+    #menu ul li.active a {
+        color: #d0ffff;
+        text-decoration: underline;
+    }
+
+    /* ===== BANNER ===== */
+    #banner {
+	background:url(Gemini_Generated_Image_akyfeaakyfeaakyf.png) center/cover no-repeat;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    #banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 100, 100, 0.5);
+    }
+
+    #banner .title {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    #banner h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #banner span {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    /* ===== 3 KOTAK MENU ===== */
+    #three-column {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .boxA, .boxB, .boxC {
+        display: inline-block;
+        width: 28%;
+        margin: 10px;
+        padding: 25px;
+        background: white;
+        border: 1px solid #c4e7e7;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        transition: 0.3s;
+    }
+
+    .boxA:hover, .boxB:hover, .boxC:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .button {
+        display: inline-block;
+        padding: 8px 14px;
+        background: #009999;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        background: #007575;
+    }
+
+    /* ===== SECTION VISI MISI ===== */
+    #visimisi {
+        padding: 50px 30px;
+        background: #e8ffff;
+    }
+
+    #visimisi h2 {
+        text-align: center;
+        color: #006868;
+        margin-bottom: 30px;
+    }
+
+    .content-box {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid #bfecec;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .content-box h3 {
+        color: #007979;
+        margin-top: 20px;
+    }
+
+    .content-box p, .content-box li {
+        line-height: 1.6;
+    }
+
+    /* ===== FOOTER ===== */
+    #footer {
+        margin-top: 60px;
+        background: #008b8b;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    #footer small {
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="nav">
+        <a href="HOME.HTML">Home</a>
+        <a href="PDFTRN.HTML">Pendaftaran</a>
+        <a href="SARPRAS.HTML">Sarana & Prasarana</a>
+        <a href="JATDOK.HTML">Jadwal Dokter</a>
+    </nav>
+</header>
+<!-- BANNER -->
+<div id="banner">
+    <div class="title">
+        <h2>RS CAKRAWALA BARU</h2>
+        <span>Pelayanan Terbaik untuk Kesehatan Anda</span>
+    </div>
+</div>
+
+<!-- 3 KOTAK MENU -->
+<div id="three-column">
+    <h2 style="color:#007575;">Selamat Datang</h2>
+    <span>Kami siap melayani kebutuhan kesehatan Anda dengan profesional</span><br><br>
+
+    <div class="boxA">
+        <p>Fasilitas lengkap dan modern mendukung pelayanan maksimal.</p>
+        <a href="SARPRAS.HTML" class="button">Lihat Sarana</a>
+    </div>
+
+    <div class="boxB">
+        <p>Dokter profesional dengan jadwal layanan sesuai kebutuhan pasien.</p>
+        <a href="JATDOK.HTML" class="button">Jadwal Dokter</a>
+    </div>
+
+    <div class="boxC">
+        <p>Daftar online lebih cepat tanpa harus antre di loket.</p>
+        <a href="PDFTRN.HTML" class="button">Daftar Online</a>
+    </div>
+</div>
+
+<!-- VISI MISI & DESKRIPSI -->
+<div id="visimisi">
+    <h2>Profil Rumah Sakit</h2>
+
+    <div class="content-box">
+        <h3>Deskripsi</h3>
+        <p>
+            RS Cakrawala Baru merupakan rumah sakit modern yang mengutamakan pelayanan bermutu,
+            profesional, dan berorientasi pada keselamatan pasien. Kami berkomitmen memberikan
+            layanan kesehatan terbaik dengan fasilitas lengkap, tenaga medis berpengalaman,
+            serta proses pelayanan yang cepat, aman, dan terpercaya.
+        </p>
+
+        <h3>Visi</h3>
+        <p>
+            “Menjadi rumah sakit pilihan utama masyarakat dengan pelayanan berkualitas dan berfokus pada keselamatan pasien.”
+        </p>
+
+        <h3>Misi</h3>
+        <ul>
+            <li>Mengutamakan mutu dan keselamatan pasien dalam setiap layanan.</li>
+            <li>Menyediakan fasilitas yang lengkap, modern, dan sesuai standar.</li>
+            <li>Mengembangkan sumber daya manusia yang profesional dan berintegritas.</li>
+            <li>Memberikan pelayanan cepat, tepat, ramah, dan aman.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+    <small>   HOME | Rumah Sakit Cakrawala Baru</small>
+</div>
+
+</body>
+</html>

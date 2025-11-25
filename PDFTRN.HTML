@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PENDAFTARAN PASIEN</title>
+
+<style>
+    body {
+        font-family: 'Didact Gothic', sans-serif;
+		background:url(Gemini_Generated_Image_fzq8k6fzq8k6fzq8.png) center/cover no-repeat;
+        margin: 0;
+        padding: 0;
+        color: #024d4d;
+    }
+
+    /* ===================== NAVBAR ===================== */
+    .nav {
+        position: relative;
+        z-index: 2;
+        padding: 20px 50px;
+        text-align: right;
+        background: rgba(0,120,120,0.65);
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .nav a:hover,
+    .nav .active {
+        color: #d0ffff;
+        text-decoration: underline;
+    }
+
+    /* ===================== PAGE HEADER TITLE ===================== */
+    header {
+        background: rgba(0,120,120,0.7);
+        color: white;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 26px;
+        margin-top: 0;
+        font-weight: bold;
+    }
+
+    /* ===================== FORM ===================== */
+    form {
+        background-color: white;
+        width: 60%;
+        margin: 40px auto;
+        padding: 25px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    td {
+        font-size: 16px;
+        color: #333;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #a9e9e6;
+        border-radius: 6px;
+        font-size: 15px;
+        background: #f4ffff;
+    }
+
+    input[type="submit"] {
+        background-color: #00b3a0;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #009d8b;
+    }
+
+    /* ===================== FOOTER ===================== */
+    footer {
+        margin-top: 60px;
+        background: #008a8a;
+        color: white;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- ============== NEW NAVIGATION ============== -->
+<nav class="nav">
+    <a href="HOME.HTML">Home</a>
+    <a class="active" href="PDFTRN.HTML">Pendaftaran</a>
+    <a href="SARPRAS.HTML">Sarana & Prasarana</a>
+    <a href="JATDOK.HTML">Jadwal Dokter</a>
+</nav>
+
+<header>
+    PENDAFTARAN PASIEN
+</header>
+
+<form method="post" action="PDFTRN.PHP">
+    <table>
+        <tr>
+            <td>No. Rekam Medis:</td>
+            <td><input type="text" name="no_rm" required></td>
+        </tr>
+        <tr>
+            <td>Nama:</td>
+            <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+            <td>Alamat:</td>
+            <td><input type="text" name="alamat" required></td>
+        </tr>
+        <tr>
+            <td>No. BPJS:</td>
+            <td><input type="text" name="no_bpjs"></td>
+        </tr>
+        <tr>
+            <td>Penanggung Jawab:</td>
+            <td><input type="text" name="penanggung"></td>
+        </tr>
+        <tr>
+            <td>Pemeriksaan Awal:</td>
+            <td>
+                <select name="pemeriksaan">
+                    <option value="Stabil">Stabil</option>
+                    <option value="Kurang Stabil">Kurang Stabil</option>
+                    <option value="Kritis">Kritis</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Anamnesa:</td>
+            <td><input type="text" name="anamnesa"></td>
+        </tr>
+        <tr>
+            <td>Pembayaran:</td>
+            <td>
+                <select name="pembayaran">
+                    <option value="BPJS">BPJS</option>
+                    <option value="Umum">Umum</option>
+                    <option value="Asuransi Lain">Asuransi Lain</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" value="Kirim Data">
+</form>
+
+<footer>
+    PENDAFTARAN PASIEN ONLINE | Rumah Sakit Cakrawala Baru
+</footer>
+
+</body>
+</html>

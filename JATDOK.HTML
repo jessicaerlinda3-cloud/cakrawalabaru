@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Jadwal Dokter - RS Cakrawala Baru</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #e8ffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ===== HEADER ===== */
+header {
+    width: 100%;
+    background: #008b8b;
+    padding: 16px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+    .nav {
+        position: relative;
+        z-index: 2;
+        padding: 20px 50px;
+        text-align: right;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+        color: #d0ffff;
+        text-decoration: underline;
+    }
+
+    /* Title */
+    .title {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .title h2 {
+        color: #006d6d;
+        margin: 0;
+    }
+
+    .title span {
+        color: #444;
+    }
+
+    /* Tabel Jadwal */
+    table {
+        width: 90%;
+        margin: 0 auto 50px auto;
+        border-collapse: collapse;
+        background: white;
+    }
+
+    th {
+        background: #009999;
+        color: white;
+        padding: 12px;
+        text-align: center;
+    }
+
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #d0d0d0;
+        text-align: center;
+    }
+
+    /* Foto Dokter */
+    .foto-dokter {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #009999;
+    }
+
+    /* Footer */
+    #copyright {
+        text-align: center;
+        padding: 20px;
+        background: #008b8b;
+        color: white;
+        margin-top: 50px;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="nav">
+        <a href="HOME.HTML">Home</a>
+        <a href="PDFTRN.HTML">Pendaftaran</a>
+        <a href="SARPRAS.HTML">Sarana Prasarana</a>
+        <a class="active" href="JATDOK.HTML">Jadwal Dokter</a>
+    </nav>
+</header>
+
+<!-- CONTENT -->
+<div class="title">
+    <h2>Jadwal Dokter</h2>
+    <span class="byline">Jadwal praktek dokter setiap hari</span>
+</div>
+
+<table>
+    <tr>
+        <th>Foto</th>
+        <th>Nama Dokter</th>
+        <th>Spesialis</th>
+        <th>Hari</th>
+        <th>Jam</th>
+    </tr>
+
+    <!-- DOKTER 1 -->
+    <tr>
+        <td><img src="dr 2.jpg" class="foto-dokter"></td>
+        <td>dr. Soe Young </td>
+        <td>Penyakit Dalam</td>
+        <td>Senin - Jumat</td>
+        <td>08:00 - 14:00</td>
+    </tr>
+
+    <!-- DOKTER 2 -->
+    <tr>
+        <td><img src="dr 1.jpg" class="foto-dokter"></td>
+        <td>dr. Halmahaera</td>
+        <td>Anak</td>
+        <td>Senin - Sabtu</td>
+        <td>09:00 - 16:00</td>
+    </tr>
+
+    <!-- DOKTER 3 -->
+    <tr>
+        <td><img src="dr 3.jpg" class="foto-dokter"></td>
+        <td>dr. Jesslyn</td>
+        <td>Bedah Umum</td>
+        <td>Selasa & Kamis</td>
+        <td>10:00 - 15:00</td>
+    </tr>
+	
+	    <!-- DOKTER 4 -->
+    <tr>
+        <td><img src="dr 4.jpg" class="foto-dokter"></td>
+        <td>dr. Felix</td>
+        <td>Obgyn</td>
+        <td>Rabu - Sabtu</td>
+        <td>09:00 - 15:00</td>
+    </tr>
+	
+</table>
+
+<!-- FOOTER -->
+<div id="copyright">
+  JADWAL DOKTER PRAKTIK | Rumah Sakit Cakrawala Baru
+</div>
+
+</body>
+</html>
